@@ -9,4 +9,4 @@ bot.command({
 name: "install",
 code: `$title[1;Install]
 $image[1;https://nodei.co/npm/$message.png?downloads=true]`
-}`
+})`
