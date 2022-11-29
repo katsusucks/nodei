@@ -1,10 +1,13 @@
-const aoi = require("aoi.js")
-const bot = new aoi.Bot({
-token: "DISCORD-BOT-TOKEN",
-prefix: "DISCORD-BOT-PREFIX",
-intents: ["GUILDS", "GUILD_MESSAGES"]
+const { AoiClient } = require("aoi.js");
+
+const bot = new AoiClient({
+    token: "DISCORD_BOT_TOKEN",
+    intents: ["messageContent", "guilds", "guildMessages"],
+    prefix: "DISCORD_BOT_PREFIX" //!
 })
+
 bot.onMessage()
+
 bot.command({
 name: "install",
 code: `$title[1;Install]
