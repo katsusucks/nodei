@@ -1,11 +1,10 @@
-const { AoiClient } = require("aoi.js");
+const aoijs = require("aoi.js")
 
-const bot = new AoiClient({
-    token: "DISCORD_BOT_TOKEN",
-    intents: ["messageContent", "guilds", "guildMessages"],
-    prefix: "DISCORD_BOT_PREFIX" //!
+const bot = new aoijs.AoiClient({
+token: "Discord Bot Token",
+prefix: "Discord Bot Prefix", //!
+intents: ["MessageContent", "Guilds", "GuildMessages"]
 })
-
 bot.onMessage()
 
 bot.command({
